@@ -1,0 +1,72 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fffecd"
+    android:padding="10dp"
+    android:weightSum="1">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="18dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+        android:text="Add photo at your location"
+        android:id="@+id/button1"
+        android:onClick="onAddPhotoClick" android:textColor="#ffffff"
+        android:background="#272e85"
+        android:padding="4dp" />
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="374dp" android:id="@+id/map"
+        tools:context="com.TeamGlapp.BCIBUU.garbagelocator.Dashboard"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:layout="@layout/abc_screen_simple"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="3">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cleared only"
+            android:id="@+id/buttonClearedOnly"
+            android:layout_gravity="left"
+            android:background="#5dff32"
+            android:onClick="ClearedOnly"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Refresh Map"
+            android:id="@+id/button5"
+            android:background="#30368a"
+            android:textColor="#ffffff"
+            android:onClick="OnRefresh"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Uncleared Only"
+            android:id="@+id/buttonUnclearedOnly"
+            android:layout_gravity="right"
+            android:background="#ff292c"
+            android:onClick="UnclearedOnly"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

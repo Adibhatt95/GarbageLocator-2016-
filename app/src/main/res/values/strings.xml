@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Garbage Locator</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dashboard">Map</string>
+    ?xml version="1.0" encoding="utf-8"?>
+    <string name="mprAdvKeyStr">MprAdvCode</string>
+    <string name="mprUsrKeyStr">MprUsrName</string>
+    <string name="mprPasswdKeyStr">MprPasswd</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_view_image">ViewImage</string>
+    <string name="intro">About 0.1 million tonnes of municipal solid waste is generated in India every day. That is approximately 36.5 million tonnes annually. This Application, created by ACM aims to assist organisations and people identify and locate packets of waste in order to help clear them. Please log-in/register and then please select your location. After that, take a photo of the garbage.
+</string>
+    <string name="Introduc">About 0.1 million tonnes of municipal solid waste is generated in India every day. That is approximately 36.5 million tonnes annually. This Application, created by ACM aims to assist organisations and people identify and locate packets of waste in order to help clear them. Please log-in/register. After that, take a photo of the garbage which will be marked on the map at your location.</string>
+    <string name="Int">About 0.1 million tonnes of municipal solid waste is generated in India every day. That is approximately 36.5 million tonnes annually. This Application, created by DJ ACM aims to assist organisations and people identify and locate packets of waste in order to help clear them. Please log-in/register. After that, take a photo of the garbage which will be marked on the map at your location.</string>
+    <string name="title_activity_browser">BrowserActivity</string>
+    <string name="forgotpasswd"><u>Forgot Password</u></string>
+
+</resources>

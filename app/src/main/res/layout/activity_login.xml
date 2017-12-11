@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".Login" android:orientation="vertical"
+    android:background="#fffecd" android:weightSum="2"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:onClick="LayoutonClick">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="14dp"
+            android:id="@+id/name" android:text="GARBAGE LOCATOR APPLICATION"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#1a237e"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="match_parent" android:layout_marginTop="20dp" android:textColor="#1a237e" android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content" android:text="    This Application, created by DJ Sanghvi College Students, aims to assist the BMC and people identify and locate packets of waste in order to help clear them. Please log-in/register. After that, take a photo of the garbage which will be marked on the map at your location." android:textSize="20dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent" android:layout_weight="1"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent" android:orientation="vertical" android:background="#1a237e" android:id="@+id/l1"
+            android:layout_height="match_parent" android:visibility="invisible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblUserName" android:text="Email:"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:layout_marginTop="15dp"
+
+
+
+                android:gravity="left"
+                android:textSize="16dp" />/
+
+            <EditText android:id="@+id/userName" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:background="#fffecd"
+                  android:layout_marginRight="20dp" android:layout_marginLeft="20dp"
+                android:padding="4dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                android:id="@+id/lblPasswd" android:text="Password:"
+                android:layout_gravity="center_horizontal"
+
+                android:textColor="#ffffff"
+                android:gravity="left"
+                android:textSize="16dp"
+               />/
+
+            <EditText android:id="@+id/password" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fffecd" android:layout_marginRight="20dp" android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+
+                android:padding="4dp"
+                android:imeOptions="actionUnspecified" android:inputType="textPassword"
+                android:maxLines="1" android:singleLine="true"
+               />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:layout_width="wrap_content"  android:onClick="startDashBoard" android:id="@+id/sign_in_button"
+                    android:layout_height="40dp"  android:text="LOGIN" android:padding="3dp" android:textColor="#1a237e" android:background="#fffecd"
+                    android:textSize="15dp" android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="3dp" android:textColor="#000000" android:background="#fffecd"
+                    android:id="@+id/button6"
+                    android:onClick="cancelOnClick"
+                    android:singleLine="false"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical" android:id="@+id/l2"
+        android:layout_height="wrap_content" android:visibility="visible"
+        android:weightSum="1">
+        <RelativeLayout android:id="@+id/button2" android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="60dp"
+
+
+            android:background="#ffb63e" android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Register" android:textColor="#010101" android:textSize="32dp" android:layout_centerInParent="true"/>
+
+           </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent" android:orientation="vertical"
+            android:layout_height="60dp"
+             android:layout_marginTop="10dp"
+            android:id="@+id/layout" android:textColor="#ffffff"
+            android:onClick="RegisterhyperlinkClick"
+            android:background="#1a237e"
+            android:textStyle="bold"
+            android:textSize="16dp"
+
+            android:layout_marginBottom="39dp"
+            android:layout_weight="0.46">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Login" android:textColor="#ffffff" android:textSize="32dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Forgot Password?"
+            android:id="@+id/textView11"
+            android:textColor="#1a237e"
+            android:layout_gravity="center_horizontal"
+            android:onClick="ForgotPasswordClick"
+            android:layout_weight="0.41" />
+
+
+    </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

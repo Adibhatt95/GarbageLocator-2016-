@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".Dashboard">
+    <item android:id="@+id/action_exit" android:title="Exit"
+        android:orderInCategory="100"
+        android:visible="true"/>
+    <item
+        android:id="@+id/a_More"
+        android:title="Settings">
+        <menu>
+            <item android:id="@+id/action_changePasswd" android:title="Change Password"
+                android:orderInCategory="100"
+                android:visible="true"/>
+            <item android:id="@+id/action_logout" android:title="Logout"
+                android:orderInCategory="100"
+                android:visible="true"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/aboutus"
+        android:title="About Us">
+        </item>
+</menu>
